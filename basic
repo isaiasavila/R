@@ -1,0 +1,27 @@
+x <- c(3,4,5)
+# mostra objetos do ambiente
+ls()
+# sum() retorna a soma
+sum(x)
+# mean() retorna a média
+mean(x)
+# var() retorna a variância
+var(x)
+# array para teste
+capacidade <- c(14,13,14,13,16,NA,NA,20,NA)
+# média sem tratamento
+mean(capacidade)
+# média com tratamento
+mean(capacidade, na.rm=TRUE)
+# Verifica um conjunto de dados faltantes, retornando um valor boolean
+is.na(capacidade)
+# substr(Valor, Início, Final) - correspondência posicional
+substr("isaias", 1, 3)
+# mesma saída de cima, porém com argumentos nomeados - correspondência de palavraschave, nesse caso a ordem não altera o resultado
+substr(stop=3, start=1, "isaias")
+# função simples
+soma_quadrados <- function(x,y,z){# lista os argumentos
+somaq <- sum(c(x^2,y^2,z^2))# realiza as operações
+return(somaq)# retorno do valor
+}
+soma_quadrados(3,4,5)
