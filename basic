@@ -1,3 +1,10 @@
+# array sequencial
+sequencia <- seq(10,30)
+# array de boolean
+resultado <- c(T,F,T,F,T,T)
+# array de strings
+stooges <- c("Moe","Larry", "Curly")
+# c() cria um vetor
 x <- c(3,4,5)
 # mostra objetos do ambiente
 ls()
@@ -25,3 +32,14 @@ somaq <- sum(c(x^2,y^2,z^2))# realiza as operações
 return(somaq)# retorno do valor
 }
 soma_quadrados(3,4,5)
+# sequência de números, de um em um
+sequencia_numerica <- 10:30
+# um array sequencial com um passo de 2 em 2
+vinte_numeros_pares <- seq(2,40,2)
+# um array que repete 4 vezes o argumento
+sequencia_repetida <- rep(sequencia_numerica,4)
+sequencia_repetida
+y <- c(6,8,2)
+# um array com os valores de y, pela quantidade dos valores de x
+sequencia_repetida <- rep(y,x)
+sequencia_repetida
